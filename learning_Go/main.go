@@ -22,6 +22,7 @@ func main() {
 	test = append(test, "test3")
 	test = append(test, "test3")
 	test = append(test, "test3")
+	test = append(test, "test3")
 
 	fmt.Println(len(test))
 	fmt.Println(cap(test))
