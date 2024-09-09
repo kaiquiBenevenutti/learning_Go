@@ -3,13 +3,14 @@ package main
 import "fmt"
 
 func main() {
-	if retorno := test(); retorno == "teste" {
-		fmt.Print("Sim!")
-	} else {
-		fmt.Print("Não!")
-	}
-}
+	test := "test"
 
-func test() string {
-	return "teste"
+	switch test {
+
+	case "teste", "teste3":
+		fmt.Print("Primeira condição!")
+
+	case "test":
+		fmt.Print("Segunda condição!")
+	}
 }
