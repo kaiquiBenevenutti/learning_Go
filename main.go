@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	test := "teste"
+	test := "teste7"
 
 	switch test {
 
@@ -16,9 +16,12 @@ func main() {
 	
 	case "test5":
 		fmt.Print("Terceira condição!")
-	break // faz ele parar de cair
+		break // faz ele parar de cair
 
 	case "teste6":
 		fmt.Print("Teste")
+
+	default:
+		fmt.Print("Default")
 	}
 }
