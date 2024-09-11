@@ -6,15 +6,13 @@ import (
 
 func main() {
 
-	value, err := test()
-
-	if err != nil {
-		fmt.Println(err)
+	funcaoTest := func(test string, testInt int) {
+		fmt.Println(test, testInt)
 	}
 
-	fmt.Println(value)
+	test(funcaoTest)
 }
 
-func test() (string, error) {
-	return "certo", nil
+func test(value func(string, int)) {
+	value("Teste", 89)
 }
