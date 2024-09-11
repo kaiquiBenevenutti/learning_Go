@@ -4,9 +4,9 @@ import "fmt"
 
 func main() {
 
-	teste := false
+	teste := []string{"teste1", "teste2", "teste3"}
 
-	for ok := true; ok; ok = teste {
-		fmt.Println("FOI")
+	for i, value := range teste {
+		fmt.Println(value, i)
 	}
 }
