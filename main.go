@@ -4,10 +4,9 @@ import "fmt"
 
 func main() {
 
-	teste := 0
+	teste := false
 
-	for teste <= 10 {
-		fmt.Println(teste)
-		teste ++
+	for ok := true; ok; ok = teste {
+		fmt.Println("FOI")
 	}
 }
