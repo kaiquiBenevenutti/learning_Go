@@ -1,13 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 
-	teste := []string{"teste1", "teste2", "teste3"}
+	value, err := test()
 
-	//Substituir uma variavel por "_" para ignora-la, não pode apenas deixar vazio
-	for _, value := range teste {
-		fmt.Println(value)
+	if err != nil {
+		fmt.Println(err)
 	}
+
+	fmt.Println(value)
+}
+
+func test() (string, error) {
+	return "certo", nil
 }
