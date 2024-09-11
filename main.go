@@ -1,18 +1,20 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 
-	funcaoTest := func(test string, testInt int) {
-		fmt.Println(test, testInt)
-	}
+	test() //funciona
+	test("kaiqui") //funciona
+	test("kaiqui", "rafael") //funciona ...
 
-	test(funcaoTest)
 }
 
-func test(value func(string, int)) {
-	value("Teste", 89)
+
+//Pode mandar 0 ou N parametros
+func test(valoresString ...string) {
+
+	for _, x := range valoresString {
+		fmt.Println(x)
+	}
 }
